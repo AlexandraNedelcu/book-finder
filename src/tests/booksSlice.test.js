@@ -1,4 +1,4 @@
-import booksReducer, { addToFavorites, removeFromFavorites } from './booksSlice'
+import booksReducer, { addToFavorites, removeFromFavorites } from '../features/booksSlice'
 
 const sampleBook = { id: 'abc123', volumeInfo: { title: 'Test Book' } }
 

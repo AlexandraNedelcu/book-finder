@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from '@testing-library/react'
-import BookCard from './BookCard'
+import BookCard from '../components/BookCard'
 import { Provider } from 'react-redux'
 import { configureStore } from '@reduxjs/toolkit'
 import booksReducer from '../features/booksSlice'
