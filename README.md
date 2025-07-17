@@ -17,12 +17,12 @@ Book Finder is a modern React application that allows users to search for books 
 
 ## 🚀 Features
 
-- 🔍 Search books by title or author
-- 💖 Save/remove favorite books
-- 🌐 Google Books API integration
-- 📱 Responsive UI (Material UI)
-- ✅ Unit and component tests
-- 🔄 CI workflow with GitHub Actions
+- Search books by title or author
+- Save/remove favorite books
+- Google Books API integration
+- Responsive UI (Material UI)
+- Unit and component tests
+- CI workflow with GitHub Actions
 
 ---
 
