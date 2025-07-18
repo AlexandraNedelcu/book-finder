@@ -5,7 +5,7 @@ const NavBar = () => (
   <AppBar position="static">
     <Toolbar>
       <Typography variant="h6" sx={{ flexGrow: 1 }}>
-        Book Finder
+        Book Finder App
       </Typography>
       <Button color="inherit" component={Link} to="/">
         Home

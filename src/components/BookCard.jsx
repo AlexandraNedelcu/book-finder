@@ -7,35 +7,35 @@ import {
   CardActions,
   Button,
 } from '@mui/material'
+import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
+import BookmarkIcon from '@mui/icons-material/Bookmark';
 import { useDispatch, useSelector } from 'react-redux'
 import { addToFavorites, removeFromFavorites } from '../features/booksSlice'
 
 const BookCard = ({ book }) => {
   const dispatch = useDispatch()
   const { favorites } = useSelector((state) => state.books)
-
   const isFavorite = favorites.some((fav) => fav.id === book.id)
-
   const { title, authors, imageLinks } = book.volumeInfo
   const thumbnail = imageLinks?.thumbnail
 
   return (
-    <Card>
-      {thumbnail && <CardMedia component="img" height="200" image={thumbnail} alt={title} />}
-      <CardContent>
+    <Card sx={{ width: 250, height: 400}}>
+      {thumbnail && <CardMedia component="img" sx={{ height: 200 }} image={thumbnail} alt={title} />}
+      <CardContent sx={{ height: 150 }}>
         <Typography variant="h6">{title}</Typography>
         <Typography variant="body2" color="text.secondary">
           {authors?.join(', ')}
         </Typography>
       </CardContent>
-      <CardActions>
+      <CardActions sx={{ height: 50 }}>
         {isFavorite ? (
           <Button size="small" onClick={() => dispatch(removeFromFavorites(book.id))}>
-            Remove Favorite
+            <BookmarkIcon />
           </Button>
         ) : (
           <Button size="small" onClick={() => dispatch(addToFavorites(book))}>
-            Add Favorite
+            <BookmarkBorderIcon />
           </Button>
         )}
       </CardActions>
