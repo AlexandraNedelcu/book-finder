@@ -2,6 +2,8 @@
 
 Book Finder is a modern React application that allows users to search for books using the Google Books API, view details, and save their favorite books. Built with Redux, Material UI, and tested with Jest.
 
+Live preview: https://book-finder-an.netlify.app/
+
 ---
 
 ## 🔧 Tech Stack
